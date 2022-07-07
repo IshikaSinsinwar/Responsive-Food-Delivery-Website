@@ -1,0 +1,63 @@
+/* 4. CSS Reset */
+*{
+    margin:0px;
+    padding: 0px;
+}
+/* 5.CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* 6. Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* 15. Important to do to avoid overflow of bg image */
+    /* 7. Vertical center */
+}
+#navbar::before{
+    /* 14. Setting background to greyish image */
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+/* Navigation bar: Logo and Image */
+#logo{
+    /* 8. First set random value, then inspect element se correct */
+margin:19px 14px;
+}
+#logo img{
+    margin:5px 14px;
+    height: 56px;
+    /* 9. Same as 8 here */
+}
+#navbar ul{
+    display: flex;
+    /* 10. Display flex for navbar */
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    /* 11. Styling for list items in navbar */
+}
+#navbar ul li a{
+    
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    /* 12. Styling anchor list items */
+}
+#navbar ul li a:hover{
+    
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white
+    /* 13. Styling hover anchor list items */
+}
