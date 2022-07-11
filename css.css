@@ -94,6 +94,10 @@ p{
     padding:12px;
     
 }
+.h-secondary{
+font-size: 2.8rem;
+padding:12px;
+}
 #home h1{
     color: rgb(57, 8, 8);
     
@@ -123,4 +127,34 @@ p{
 /* Services Section */
 .center{
     text-align: center;
+}
+#services{
+    margin:34px;
+    display: flex;
+}
+.box{
+  
+    border: 2px solid brown;
+    padding:34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color:white
+}
+.box:hover{
+    
+    border: 2px solid brown;
+    padding:34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(246, 229, 209)
+}
+
+#services .box img{
+    display: block;
+    height:160px;
+    margin: auto;
+}
+
+#services-container{
+    margin:140px 34px;
 }
