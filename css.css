@@ -92,11 +92,13 @@ p{
 .h-primary{
     font-size: 2.8rem;
     padding:12px;
+    font-family: 'Bree Serif', serif;
     
 }
 .h-secondary{
-font-size: 2.8rem;
+font-size: 1.8rem;
 padding:12px;
+font-family: 'Bree Serif', serif;
 }
 #home h1{
     color: rgb(57, 8, 8);
@@ -157,4 +159,75 @@ padding:12px;
 
 #services-container{
     margin:140px 34px;
+}
+.client-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/images/bg.jpg);
+    width:100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clients img{
+    height: 144px;
+}
+#client-item{
+    padding:34px;
+}
+#contact{
+    position:relative;
+    height:580px;
+    padding:0px;
+    margin:0px;
+    
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url(/images/contact\ us.jpg) no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding:9px 20px;
+}
+#contact-box{
+    padding:4px 450px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input, #contact-box textarea{
+    width:100%;
+    padding:0.5rem 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;;
+}
+footer{
+    position: relative;
+}
+#contact-box form{
+    width: 100%;
+}
+#contact-box label{
+    width:40px;
+    font-size: 1.3rem;
 }
