@@ -1,11 +1,65 @@
+*body{
+    display: flex;
+    align-items: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding:0px 7px;
+}
+
+
 #home{
+    
+    height:511px;
+    margin:0px;
+    padding: 0px 23px;
+
+    
 
 }
-
+#home::before{
+    height:700px;
+}
+#home p{
+    font-size: 1rem;
+}
+.h-primary{
+    font-size: 2.6rem;
+    text-align: center;
+}
 #services{
+    flex-direction: column;
 
 }
 
-#navigation{
+#services.box{
+
+}
+
+#navbar{
+    flex-direction: column;
+
+}
+
+#clients{
+    overflow: hidden;
+}
+#clients img{
+    height:5rem;
+    height:5rem;
+}
+#logo{
+    margin:6px;
+}
+.btn{
+    font-size: 1rem;
+    
+    
+}
+#contact-box form{
+    width:70%;
     
 }

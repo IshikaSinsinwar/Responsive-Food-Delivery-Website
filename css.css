@@ -6,6 +6,10 @@
     
     font-weight: bold;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 /* 5.CSS Variables */
 :root{
     --navbar-height:59px;
@@ -13,8 +17,9 @@
 /* 6. Navbar */
 #navbar{
     display: flex;
+    position: sticky;
     align-items: center;
-    position: relative;
+    top:0px;
     /* 15. Important to do to avoid overflow of bg image */
     /* 7. Vertical center */
 }
@@ -23,6 +28,9 @@
     content: "";
     background-color: black;
     position: absolute;
+    top:0px;
+    left:0px;
+    
     height: 100%;
     width:100%;
     z-index:-1;
@@ -48,7 +56,7 @@ margin:19px 14px;
     /* 11. Styling for list items in navbar */
 }
 #navbar ul li a{
-    
+    display: block;
     padding:3px 22px;
     border-radius: 20px;
     text-decoration: none;
@@ -70,18 +78,23 @@ margin:19px 14px;
     padding:3px 200px;
     justify-content: center;
     align-items: center;
-    height: 480px;
+    height: 576px;
+    
     /* 14. To adjust bg image */
 }
 
 #home::before{
     content: "";
-    background: url(/images/bg.jpg) no-repeat center center/cover;
     position: absolute;
+    background: url(/images/bg.jpg) no-repeat center center/cover;
     height: 100%;
     width:100%;
     z-index:-1;
     opacity:0.9;
+    top:0px;
+    left:0px;
+    
+
 
 }
 p{
@@ -102,8 +115,9 @@ font-family: 'Bree Serif', serif;
 }
 #home h1{
     color: rgb(57, 8, 8);
-    
+    text-align: center;
     font-weight: bolder;
+    
 }
 #home p{
     font-size: 1.2rem;
@@ -134,7 +148,7 @@ font-family: 'Bree Serif', serif;
     margin:34px;
     display: flex;
 }
-.box{
+#services .box{
   
     border: 2px solid brown;
     padding:34px;
@@ -142,7 +156,7 @@ font-family: 'Bree Serif', serif;
     border-radius: 28px;
     background-color:white
 }
-.box:hover{
+#services .box:hover{
     
     border: 2px solid brown;
     padding:34px;
@@ -153,7 +167,7 @@ font-family: 'Bree Serif', serif;
 
 #services .box img{
     display: block;
-    height:160px;
+    height:5rem;
     margin: auto;
 }
 
@@ -189,9 +203,7 @@ font-family: 'Bree Serif', serif;
 }
 #contact{
     position:relative;
-    height:580px;
-    padding:0px;
-    margin:0px;
+    
     
 }
 #contact::before{
@@ -210,24 +222,31 @@ footer{
     padding:9px 20px;
 }
 #contact-box{
-    padding:4px 450px;
+    /* padding:4px 450px;
     display: block;
     justify-content: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 34px;
 }
 #contact-box input, #contact-box textarea{
     width:100%;
-    padding:0.5rem 0.5rem;
+    padding:0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;;
 }
 footer{
-    position: relative;
+    background: black;
+    color: white;
+    padding:9px 20px;
 }
 #contact-box form{
-    width: 100%;
+    width: 40%;
 }
 #contact-box label{
-    width:40px;
+
     font-size: 1.3rem;
 }
